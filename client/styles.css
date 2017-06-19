@@ -1,5 +1,6 @@
 .jumbotron {
    text-align: center;
+   background-color: #f4be41;
 }
 
 #textbox {
@@ -15,4 +16,9 @@
 
 div .container {
         background-color: lightgrey;
+}
+
+body {
+    color: #41bef4;
+    font-family: Trebuchet MS, Helvetica, sans-serif;
 }

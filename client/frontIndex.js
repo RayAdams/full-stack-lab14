@@ -14,7 +14,7 @@ function postChirp(){
     var chirp = {
         user: 'Rachael',
         message: $chirpField.val(),
-        timestamp: new Date().toISOString()
+        timestamp: new Date().toISOString(),
     };
     $.ajax({
         method: 'POST',
@@ -42,6 +42,7 @@ function getChirps(){
             var $user = $('<h4></h4>');            
             var $message = $('<p></p>');
             var $timestamp = $('<h5></h5>');
+            var $likeBtn = $('<button class="btn btn-primary btn-xs"><i class="fa fa-thumbs-up"></i> Like</button>');
 
             $user.text(chirps[i].user);
             $message.text(chirps[i].message);
@@ -50,6 +51,7 @@ function getChirps(){
             $user.appendTo($chirpDiv);
             $message.appendTo($chirpDiv);
             $timestamp.appendTo($chirpDiv);
+            $likeBtn.appendTo($chirpDiv);
 
             $chirpDiv.appendTo($chirpList);
         }
