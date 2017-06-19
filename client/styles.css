@@ -1,0 +1,18 @@
+.jumbotron {
+   text-align: center;
+}
+
+#textbox {
+    display: inline-block
+}
+
+.text {
+    position: center;
+    vertical-align: middle;
+    text-align: center;
+    padding-left: 5em;
+}
+
+div .container {
+        background-color: lightgrey;
+}
